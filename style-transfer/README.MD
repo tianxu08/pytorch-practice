@@ -1,6 +1,7 @@
 ## Style Transfer
 
 This is a practice of style transfer.
+The model uses the method described in [Perceptual Losses for Real-Time Style Transfer and Super-Resolution](https://arxiv.org/abs/1603.08155) and [Instance Normalization](https://arxiv.org/pdf/1607.08022.pdf).
 
 ## Install dependencies
 
@@ -15,12 +16,11 @@ pip install -r requirements.txt
 
 ## Data 
 
-Under 'data/', run 
+Under `data/`, run 
 ```Bash
 ./prepare_dataset.sh
 ```
-Bascially, it will download the dataset from [coco](http://images.cocodataset.org/zips/train2014.zip) and then save the data under `data/coco`
-
+Bascially, it will download the dataset from [coco](http://images.cocodataset.org/zips/train2014.zip) and then save the pictures under `data/coco`
 
 ## Run
 ### Start Visdom
